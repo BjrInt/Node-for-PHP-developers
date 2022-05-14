@@ -3,7 +3,7 @@ import { writeFile } from "fs/promises"
 
 const letters = `thequickbrownfoxjumpsoverthelazydog.?!`
 const randLetter = () => {
-  const seed = Math.random() * words.length | 0
+  const seed = Math.random() * letters.length | 0
 
   return letters.charAt(seed)
 }
