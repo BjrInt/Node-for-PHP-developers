@@ -1,11 +1,11 @@
 // use this script to generate a random 500mb file
 import { writeFile } from "fs/promises"
 
+const letters = `thequickbrownfoxjumpsoverthelazydog.?!`
 const randLetter = () => {
-  const words = `thequickbrownfoxjumpsoverthelazydog.?!`.split('')
   const seed = Math.random() * words.length | 0
 
-  return words[seed]
+  return letters.charAt(seed)
 }
 
 const setup = async (size=10**7, path='hugefile') => {
