@@ -1,8 +1,11 @@
 import { readFile } from "fs/promises"
 
-try {
-  const content = await readFile()
-  console.log(content.length)
-} catch (err) {
-  console.log(err)
+const displayFileLength = async () => {
+  try {
+    const content = await readFile()
+    return content.length
+  } catch (err) {
+    return err
+  }
 }
+
