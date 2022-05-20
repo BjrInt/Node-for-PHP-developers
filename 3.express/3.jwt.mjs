@@ -17,6 +17,9 @@ const server = express()
 const sign = promisify(JWT.sign)
 const verify = promisify(JWT.verify)
 
+// Use the json middleware to parse the request body
+server.use(express.json())
+
 // This route will encore the posted user into the token
 server.post('/login', async (req, res) => {
   const { user } = req.body
