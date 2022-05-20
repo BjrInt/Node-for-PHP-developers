@@ -1,3 +1,4 @@
 hugefile
 logs.txt
 node_modules
+.env
