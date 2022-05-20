@@ -23,3 +23,10 @@ Using the native Node http module, create a basic http server.
 ### 3. Express JS
 
 Some examples of Express, the leading Node.js framework
+
+## Some technologies and frameworks worth checking out
+
+- [Next.js](https://nextjs.org/)/[Nuxt.js](https://nuxtjs.org/) React/Vue fullstack frameworks based on express
+- [Prisma](https://www.prisma.io/) A typed ORM that works like a charm
+- [GraphQL Yoga](https://www.graphql-yoga.com/) An easy to setup GraphQL server
+- [The Node.js streams module](https://nodejs.dev/learn/nodejs-streams) To handle big files asynchronously
